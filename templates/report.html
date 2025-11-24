@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ weather.city }} Weather</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background: url('{{ url_for('static', filename=background) }}') no-repeat center center fixed; background-size: cover;">
+  <div class="overlay">
+    <div class="container">
+      <h2>{{ weather.city }}, {{ weather.country }}</h2>
+
+      <div class="current">
+        <img src="http://openweathermap.org/img/wn/{{ weather.current.icon }}@2x.png" alt="Weather icon">
+        <p>{{ weather.current.description.title() }}</p>
+        <p>Temp: {{ weather.current.temp }}°C</p>
+        <p>Feels Like: {{ weather.current.feels_like }}°C</p>
+        <p>Humidity: {{ weather.current.humidity }}%</p>
+        <p>Wind: {{ weather.current.wind }} m/s</p>
+      </div>
+
+      <h3>Upcoming Forecast</h3>
+      <div class="forecast">
+        {% for day in weather.forecast %}
+          <div class="card">
+            <p>{{ day.date }}</p>
+            <img src="http://openweathermap.org/img/wn/{{ day.icon }}@2x.png" alt="Forecast icon">
+            <p>{{ day.description.title() }}</p>
+            <p>{{ day.temp_min }}°–{{ day.temp_max }}°C</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

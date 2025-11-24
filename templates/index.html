@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background: url('{{ url_for('static', filename='default.jpg') }}') no-repeat center center fixed; background-size: cover;">
+  <div class="search-box">
+    <h1>Weather Forecast</h1>
+    <form action="/get_weather" method="post">
+      <input type="text" name="city" placeholder="Enter city name" required>
+      <button type="submit">Search</button>
+    </form>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+  </div>
+</body>
+</html>
