@@ -22,7 +22,7 @@ User → Flask App → OpenWeatherMap API → SOAP (XML)
 ```
 ## 🎥 Demo Video
 
-[Click here to watch the demo](https://github.com/devoloperMadhuja/Weather-Forecasting-Service/blob/main/WhatsApp%20Video%202025-11-24%20at%2011.55.13_c0a1619e.mp4)
+[Click here to watch the demo](https://github.com/devoloperMadhuja/Weather-Forecasting-Service/blob/main/WhatsApp%20Video%202025-11-24%20at%2011.55.13_c0a1619e.mp)
 
 
 ## 🧰 Tech Stack
