@@ -21,8 +21,7 @@ User → Flask App → OpenWeatherMap API → SOAP (XML)
      XSLT → HTML Report → Browser
 ```
 ## 🎥 Demo Video
-
-<video src="./WhatsApp Video 2025-11-24 at 11.55.13_1a9d57f9.mp4" controls width="600"></video>
+▶️ [Watch Demo Video]<video src="./WhatsApp Video 2025-11-24 at 11.55.13_1a9d57f9.mp4" controls width="600"></video>](https://github.com/user-attachments/assets/de609f93-bb3e-4778-96c6-ed9ab910901d)
 
 ## 🧰 Tech Stack
 Python, Flask, Spyne, XML, XSLT, HTML, CSS, JavaScript, OpenWeatherMap API
